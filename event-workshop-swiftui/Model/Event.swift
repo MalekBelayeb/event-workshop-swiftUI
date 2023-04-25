@@ -15,5 +15,6 @@ struct Event
     let image:String
     let title:String
     let location:String
+    let performers : [Performer]
     
 }
