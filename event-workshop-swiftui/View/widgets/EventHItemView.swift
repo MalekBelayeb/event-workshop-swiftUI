@@ -20,7 +20,7 @@ struct EventHItemView: View {
             {
                 
                 
-                Image(event.image).resizable().frame(maxWidth: self.width,maxHeight: 120).overlay(alignment:.top){
+                Image("event-img").resizable().frame(maxWidth: self.width,maxHeight: 120).overlay(alignment:.top){
                     HStack{
                         RoundedRectangle(cornerRadius: 12).fill(.white.opacity(0.7)).frame(maxWidth: 50, maxHeight: 50).overlay{
                             VStack(spacing: -4)
@@ -34,8 +34,8 @@ struct EventHItemView: View {
                 }.cornerRadius(12)
                 
                 
-                VStack{
-                    Text(event.title).font(.custom(Fonts.airbnbCereal_medium, size: 16)).lineLimit(2)
+                VStack(alignment: .leading){
+                    Text(event.title).font(.custom(Fonts.airbnbCereal_medium, size: 16)).foregroundColor(Color.black).lineLimit(2)
                     HStack(spacing: -5)
                     {
                         
@@ -79,7 +79,7 @@ struct EventHItemView: View {
                 
                 
             }.padding(.horizontal,16)
-            }.padding(.horizontal,16).frame(maxWidth: self.width, maxHeight: self.height)
+            }.padding(.horizontal,16).frame(width: self.width, height: self.height)
 
     }
     
@@ -87,6 +87,6 @@ struct EventHItemView: View {
 
 struct EventHItemView_Previews: PreviewProvider {
     static var previews: some View {
-        EventHItemView(event:  Event(date: "Sat, May 1 •2:00 PM", image: "event-img", title: "A Virtual Evening of Smooth Jazz A Virtual Evening of Smooth Jazz A Virtual Evening of Smooth Jazz A Virtual Evening of Smooth Jazz", location: "Lot 13 • Oakland, CA", performers: [Performer(image: "Image"),Performer(image: "event-img"),Performer(image: "Image"),Performer(image: "event-img"),Performer(image: "Image"),Performer(image: "event-img")]))
+        EventHItemView(event:  Event(id:"",date: "Sat, May 1 •2:00 PM", image: "event-img", title: "A Virtual Evening of Smooth Jazz A Virtual Evening of Smooth Jazz A Virtual Evening of Smooth Jazz A Virtual Evening of Smooth Jazz", location: "Lot 13 • Oakland, CA", performers: [Performer(image: "Image"),Performer(image: "event-img"),Performer(image: "Image"),Performer(image: "event-img"),Performer(image: "Image"),Performer(image: "event-img")]))
     }
 }

@@ -1,23 +1,23 @@
 //
-//  Event.swift
+//  EventDetail.swift
 //  event-workshop-swiftui
 //
-//  Created by ODC on 25/4/2023.
+//  Created by ODC on 26/4/2023.
 //
 
 import Foundation
 
-
-struct Event : Identifiable
+struct EventDetail : Identifiable
 {
     var id :String
-    
-    
+    let dateTime : String
     let date:String
     let image:String
     let title:String
-    let location:String
+    let place:String
+    let address:String
     let performers : [Performer]
+    
     
     
 }

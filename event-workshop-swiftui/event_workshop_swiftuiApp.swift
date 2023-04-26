@@ -13,19 +13,10 @@ struct event_workshop_swiftuiApp: App {
     
     var body: some Scene {
         WindowGroup {
-            
-            HomeView().onAppear{
-                
-                Task
-                {
-                    let eventService = EventService()
-
-                   let result = try await eventService.getAllEvents()
-                    print(result)
-                    
-                }
-                
+            NavigationView{
+                HomeView()
             }
+            
             
         }
     }

@@ -17,8 +17,10 @@ class Consts
     
     static let URL = "https://api.seatgeek.com/2/"
     
-    static let getAllEvents = "\(URL)events?client_id=\(clientID)&per_page=30&page=1&sort=datetime_utc.asc"
+    static let getAllEvents = "\(URL)events?client_id=\(clientID)&per_page=10&page=1&sort=datetime_utc.asc"
     
-    
+    static func getEventByIdUrl(id : String) -> String {
+        return "\(URL)events/\(id)?client_id=\(clientID)"
+    }
     
 }

@@ -27,6 +27,10 @@
 		07E7C65C29F818100038B551 /* Performer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7C65B29F818100038B551 /* Performer.swift */; };
 		07E7C65E29F82A880038B551 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7C65D29F82A880038B551 /* EventService.swift */; };
 		07E7C66129F82E630038B551 /* EventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7C66029F82E630038B551 /* EventResponse.swift */; };
+		07E7C66829F918C10038B551 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7C66729F918C10038B551 /* EventViewModel.swift */; };
+		07E7C66A29F929410038B551 /* SearchInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7C66929F929410038B551 /* SearchInputView.swift */; };
+		07E7C66C29F93FE30038B551 /* DetailsEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7C66B29F93FE30038B551 /* DetailsEventView.swift */; };
+		07E7C66E29F9685A0038B551 /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7C66D29F9685A0038B551 /* EventDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		07E7C65B29F818100038B551 /* Performer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Performer.swift; sourceTree = "<group>"; };
 		07E7C65D29F82A880038B551 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 		07E7C66029F82E630038B551 /* EventResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventResponse.swift; sourceTree = "<group>"; };
+		07E7C66729F918C10038B551 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		07E7C66929F929410038B551 /* SearchInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInputView.swift; sourceTree = "<group>"; };
+		07E7C66B29F93FE30038B551 /* DetailsEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsEventView.swift; sourceTree = "<group>"; };
+		07E7C66D29F9685A0038B551 /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,7 @@
 				07E7C64129F7D99F0038B551 /* widgets */,
 				07E7C63D29F7D95E0038B551 /* HomeView.swift */,
 				07E7C63F29F7D99A0038B551 /* EventDetailView.swift */,
+				07E7C66B29F93FE30038B551 /* DetailsEventView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -131,6 +140,7 @@
 			children = (
 				07E7C65729F7EB710038B551 /* Event.swift */,
 				07E7C65B29F818100038B551 /* Performer.swift */,
+				07E7C66D29F9685A0038B551 /* EventDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +148,7 @@
 		07E7C63C29F7D5D10038B551 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				07E7C66729F918C10038B551 /* EventViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -147,6 +158,7 @@
 			children = (
 				07E7C65529F7E42F0038B551 /* EventVItemView.swift */,
 				07E7C65929F8075D0038B551 /* EventHItemView.swift */,
+				07E7C66929F929410038B551 /* SearchInputView.swift */,
 			);
 			path = widgets;
 			sourceTree = "<group>";
@@ -260,15 +272,19 @@
 				07E7C66129F82E630038B551 /* EventResponse.swift in Sources */,
 				07E7C64029F7D99A0038B551 /* EventDetailView.swift in Sources */,
 				07E7C65829F7EB710038B551 /* Event.swift in Sources */,
+				07E7C66C29F93FE30038B551 /* DetailsEventView.swift in Sources */,
 				07E7C65629F7E42F0038B551 /* EventVItemView.swift in Sources */,
+				07E7C66829F918C10038B551 /* EventViewModel.swift in Sources */,
 				07E7C65A29F8075D0038B551 /* EventHItemView.swift in Sources */,
 				07E7C64429F7D9F00038B551 /* Consts.swift in Sources */,
 				07E7C63E29F7D95E0038B551 /* HomeView.swift in Sources */,
 				07E7C65C29F818100038B551 /* Performer.swift in Sources */,
 				07E7C64829F7DA7A0038B551 /* Config.swift in Sources */,
+				07E7C66E29F9685A0038B551 /* EventDetail.swift in Sources */,
 				07E7C64629F7D9FD0038B551 /* Styles.swift in Sources */,
 				07E7C62729F7CD5B0038B551 /* event_workshop_swiftuiApp.swift in Sources */,
 				07E7C63329F7CD5D0038B551 /* event_workshop_swiftui.xcdatamodeld in Sources */,
+				07E7C66A29F929410038B551 /* SearchInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
