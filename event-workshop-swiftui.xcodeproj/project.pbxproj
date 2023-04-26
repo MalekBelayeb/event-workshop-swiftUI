@@ -25,6 +25,8 @@
 		07E7C65829F7EB710038B551 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7C65729F7EB710038B551 /* Event.swift */; };
 		07E7C65A29F8075D0038B551 /* EventHItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7C65929F8075D0038B551 /* EventHItemView.swift */; };
 		07E7C65C29F818100038B551 /* Performer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7C65B29F818100038B551 /* Performer.swift */; };
+		07E7C65E29F82A880038B551 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7C65D29F82A880038B551 /* EventService.swift */; };
+		07E7C66129F82E630038B551 /* EventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7C66029F82E630038B551 /* EventResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		07E7C65729F7EB710038B551 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		07E7C65929F8075D0038B551 /* EventHItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHItemView.swift; sourceTree = "<group>"; };
 		07E7C65B29F818100038B551 /* Performer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Performer.swift; sourceTree = "<group>"; };
+		07E7C65D29F82A880038B551 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		07E7C66029F82E630038B551 /* EventResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 		07E7C63929F7D5940038B551 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				07E7C65F29F82E560038B551 /* models */,
+				07E7C65D29F82A880038B551 /* EventService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -165,6 +171,14 @@
 				07E7C64D29F7DC100038B551 /* AirbnbCereal_W_Md.otf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		07E7C65F29F82E560038B551 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				07E7C66029F82E630038B551 /* EventResponse.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E7C65E29F82A880038B551 /* EventService.swift in Sources */,
+				07E7C66129F82E630038B551 /* EventResponse.swift in Sources */,
 				07E7C64029F7D99A0038B551 /* EventDetailView.swift in Sources */,
 				07E7C65829F7EB710038B551 /* Event.swift in Sources */,
 				07E7C65629F7E42F0038B551 /* EventVItemView.swift in Sources */,
